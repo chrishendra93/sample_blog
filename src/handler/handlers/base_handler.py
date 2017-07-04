@@ -3,7 +3,8 @@ from template.jinja_env import JinjaEnv
 
 
 class BaseHandler(webapp2.RequestHandler):
-    def __init__(self):
+    def __init__(self, uri=""):
+        self.uri = uri
         self.jinja_env = JinjaEnv()
 
     def write(self, *a, **kw):
