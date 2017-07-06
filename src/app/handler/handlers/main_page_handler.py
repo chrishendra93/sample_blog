@@ -5,7 +5,7 @@ class MainPageHandler(BaseHandler):
     uri = '/'
 
     def render_page(self):
-        self.render('mainpage.html')
+        self.render('welcome.html')
 
     def get(self):
         self.render_page()
